@@ -11,16 +11,21 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
+			$( document ).tooltip({track: true});
 		});
 	</script>
 </head>
 <body>
+
 	<main class="container">
 		<figure class="three columns">
 			<img src="images/logo.gif" class="scale-with-grid" alt="">
@@ -28,11 +33,11 @@
 		
 		<nav class="thirteen columns">
 			<ul id="responsive-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="solutions.html">Solutions</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="index.html" href="http://jqueryui.com/themeroller/" title="Vecta Corp. Home Page">Home</a></li>
+				<li><a href="aboutus.html" href="http://jqueryui.com/themeroller/" title="Learn more about Vecta Corp.">About Us</a></li>
+				<li><a href="solutions.html" href="http://jqueryui.com/themeroller/" title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers">Solutions</a></li>
+				<li><a href="support.html" href="http://jqueryui.com/themeroller/" title="Get help with products purchased from Vecta Corp.">Support</a></li>
+				<li><a href="contactus.html" href="http://jqueryui.com/themeroller/" title="Give Vecta Corp. a call or send an email">Contact Us</a></li>
 			</ul>
 		</nav>
 		
