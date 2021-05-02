@@ -5,34 +5,28 @@
 	<title>Welcome to Vecta Corp.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js”></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
-			$( "a" ).tooltip();
-			$( "#accordian" ).accordian();
 			$( "#tabs" ).tabs();
+			$( "#accordion" ).accordion();
+			$( document ).tooltip({track: true});
 		});
 	</script>
-	
-
 </head>
 <body>
-
 	<main class="container">
 		<figure class="three columns">
 			<img src="images/logo.gif" class="scale-with-grid" alt="">
@@ -54,7 +48,7 @@
 		
 		<section id="welcome" class="five columns">
 			<h4>Welcome</h4>
-			
+
 			<p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
 		</section>
 		
@@ -69,18 +63,20 @@
 				  <li><a href="#tabs-3">vRetain 1.0</a></li>
 				</ul>
 				<div id="tabs-1">
-					<img src="images/logo_vprospect.gif" alt="vProspect">
-					<p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
-				  </div>
+					<img src="images/logo_vprospect.gif" alt="logos">
+				  <p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
+				</div>
 				<div id="tabs-2">
-				  <img src="images/logo_vconvert.gif" alt="vConvert">
+					<img src="images/logo_vconvert.gif" alt="logos">
 				  <p>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
 				</div>
 				<div id="tabs-3">
-				  <img src="images/logo_vretain.gif" alt="vRetain">
+					<img src="images/logo_vretain.gif" alt="logos">
 				  <p>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
+				 
 				</div>
 			  </div>
+			   
 		</section>
 		
 		<section id="testimonials" class="five columns">
@@ -88,20 +84,25 @@
 
 			<!-- INSERT ACCORDION HERE -->
 			<div id="accordion">
+				<h3>Testimonial 1</h3>
 				<div>
-				<p>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</p>
-				<p>Iona Ford<br>President<br>Chevy Dealers Association</p>
-				  
+				  <p>
+					Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.
+				  </p>
+				  <p>Iona Ford <br>
+					President <br>
+					Chevy Dealers Association</p>
 				</div>
-				<h3>Section 2</h3>
+				<h3>Testimonial 2</h3>
 				<div>
 				  <p>
 					Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.
 				  </p>
-				  <p>Robin Banks<br>
+				  <p>Robin Banks <br>
 					CEO <br>
 					Profits Financial, Inc.</p>
 				</div>
+				
 			  </div>
 		</section>
 	</main>
